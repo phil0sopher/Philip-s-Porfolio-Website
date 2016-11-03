@@ -7776,3 +7776,7 @@ Picker.extend( 'pickadate', DatePicker )
       }
     }; // Plugin end
 }( jQuery ));
+
+
+// Plugin initialization//
+$('.button-collapse').sideNav({'edge': 'left'});
