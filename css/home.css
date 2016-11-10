@@ -25,3 +25,18 @@ section#about {
 	background-color: #222;
 }
 
+#profile_pic {
+	width:300px;
+	height:300px;
+	*/-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+	border-radius: 50%;
+}
+
+
+@media only screen and (max-width : 375px) {
+  #profile_pic {
+    height: 17rem !important;
+    width: 17rem !important;
+  }
+}

@@ -1,0 +1,35 @@
+nav ul a,
+nav .brand-logo {
+  color: #ccc;
+}
+
+nav ul a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #BF9240;
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+/** card **/
+div.card > div.right-align {
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+div.card > div.card-action {
+  padding: 20px 10px;
+}
+/** **/
+
+
+
+

@@ -29,6 +29,9 @@
     <!-- Home CSS -->
     <link href="css/home.css" rel="stylesheet">
 
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
     <!-- Materialize Javascript -->
     <link href="js/materialize.min.js" rel="stylesheet">
 
@@ -47,25 +50,25 @@
 </head>
 
 <body id="page-top">
+    <div class="navbar-fixed">
+        <nav class="black" role="navigation">
+          <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img alt="Brand" src="img/logo_white.png" height="45px"></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
 
-        <nav>
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo"><img alt="Brand" src="img/logo_white.png" height="45px"></a>
-              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a class="page-scroll" href="#about">About</a></li>
-                <li><a class="page-scroll" href="#process">My Process</a></li>
-                <li><a class="page-scroll" href="#portfolio_title">Portfoio</a></li>
-                <li><a class="page-scroll" href="#contact">Contact</a></li>
-              </ul>
-              <ul class="side-nav" id="mobile-demo">
-                <li><a class="page-scroll" href="#about">About</a></li>
-                <li><a class="page-scroll" href="#process">My Process</a></li>
-                <li><a class="page-scroll" href="#portfolio_title">Portfoio</a></li>
-                <li><a class="page-scroll" href="#contact">Contact</a></li>
-              </ul>
-            </div>
+            <ul id="nav-mobile" class="side-nav">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
         </nav>
+    </div>
 
     <header>
         <div class="header-content">
@@ -88,8 +91,8 @@
                     <a href="#process" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 -->
 
-                <div class="col-lg-4 text-center">
-                    <img src="img/profile_pic1.jpg" alt="Profile Pic" style="width:300px;height:300px;*/-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */filter: grayscale(100%);border-radius: 50%;">        
+                <div class="col-lg-4 col-sm-3 text-center">
+                    <img src="img/profile_pic1.jpg" alt="Profile Pic" id="profile_pic">        
                 </div>
                 <div class="col-lg-8 text-center">
                     <h2 class="section-heading">About Me</h2>
@@ -273,7 +276,7 @@
     </section>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -284,7 +287,10 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materialize.js"></script>
 
 </body>
 
